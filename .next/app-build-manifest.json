@@ -1,0 +1,52 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-b602438a20039d67.js",
+      "static/chunks/fd9d1056-ec10134d27c13f3d.js",
+      "static/chunks/117-aef927ece934c2c2.js",
+      "static/chunks/main-app-a0aa9e8cd98dff3f.js",
+      "static/chunks/app/_not-found/page-b16e6e1adeac67a0.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-b602438a20039d67.js",
+      "static/chunks/fd9d1056-ec10134d27c13f3d.js",
+      "static/chunks/117-aef927ece934c2c2.js",
+      "static/chunks/main-app-a0aa9e8cd98dff3f.js",
+      "static/css/89456bad36c9828a.css",
+      "static/chunks/app/layout-452c77c8fdbe6d82.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack-b602438a20039d67.js",
+      "static/chunks/fd9d1056-ec10134d27c13f3d.js",
+      "static/chunks/117-aef927ece934c2c2.js",
+      "static/chunks/main-app-a0aa9e8cd98dff3f.js",
+      "static/chunks/224-9ab3d6fa0ff9c1d1.js",
+      "static/chunks/app/contact/page-3aeb733babbcb2a6.js"
+    ],
+    "/about/page": [
+      "static/chunks/webpack-b602438a20039d67.js",
+      "static/chunks/fd9d1056-ec10134d27c13f3d.js",
+      "static/chunks/117-aef927ece934c2c2.js",
+      "static/chunks/main-app-a0aa9e8cd98dff3f.js",
+      "static/chunks/224-9ab3d6fa0ff9c1d1.js",
+      "static/chunks/app/about/page-47686ec78e9b665e.js"
+    ],
+    "/projects/page": [
+      "static/chunks/webpack-b602438a20039d67.js",
+      "static/chunks/fd9d1056-ec10134d27c13f3d.js",
+      "static/chunks/117-aef927ece934c2c2.js",
+      "static/chunks/main-app-a0aa9e8cd98dff3f.js",
+      "static/chunks/224-9ab3d6fa0ff9c1d1.js",
+      "static/chunks/878-d63118f6986e096f.js",
+      "static/chunks/app/projects/page-528fd1778e34482c.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-b602438a20039d67.js",
+      "static/chunks/fd9d1056-ec10134d27c13f3d.js",
+      "static/chunks/117-aef927ece934c2c2.js",
+      "static/chunks/main-app-a0aa9e8cd98dff3f.js",
+      "static/chunks/224-9ab3d6fa0ff9c1d1.js",
+      "static/chunks/app/page-36f198226bb3c446.js"
+    ]
+  }
+}
