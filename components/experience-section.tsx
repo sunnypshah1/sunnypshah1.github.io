@@ -5,10 +5,10 @@ const experiences = [
   {
     company: "Protiviti",
     logo: "https://media.licdn.com/dms/image/v2/C4D0BAQEigRw2LxJyBw/company-logo_200_200/company-logo_200_200/0/1630553793445/protivitioman_logo?e=2147483647&v=beta&t=F4bLA8P7VE9pXBVnE9J43Hq9vPCZwuuSLHCQT-fy94k", // Public Protiviti logo
-    title: "Incoming Data & Artifical Intelligence Engineering Intern",
-    date: "May 2025",
+    title: "Data & Artifical Intelligence Engineering Intern",
+    date: "May 2025 - Present",
     description:
-      "Selected for an internship focused on Data and Artificial Intelligence engineering, contributing to advanced data-driven solutions and AI initiatives at Protiviti.",
+      "Build scalable AI pipelines, real-time dashboards, and production-grade models to drive insights for Fortune 500 clients",
   },
   {
     company: "Wayne State University",
