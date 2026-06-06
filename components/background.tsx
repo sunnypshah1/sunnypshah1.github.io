@@ -46,23 +46,26 @@ export function Background() {
     const ctx = canvas.getContext("2d")
     if (!ctx) return
 
+    const drawingCanvas = canvas
+    const context = ctx
+
     const stars: ShootingStar[] = []
     const starCount = 20
 
     function resizeCanvas() {
-      canvas.width = window.innerWidth
-      canvas.height = window.innerHeight
+      drawingCanvas.width = window.innerWidth
+      drawingCanvas.height = window.innerHeight
       stars.length = 0
       for (let i = 0; i < starCount; i++) {
-        stars.push(new ShootingStar(canvas.width, canvas.height))
+        stars.push(new ShootingStar(drawingCanvas.width, drawingCanvas.height))
       }
     }
 
     function animate() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height)
+      context.clearRect(0, 0, drawingCanvas.width, drawingCanvas.height)
       stars.forEach((star) => {
-        star.draw(ctx)
-        star.update(canvas.height)
+        star.draw(context)
+        star.update(drawingCanvas.height)
       })
       requestAnimationFrame(animate)
     }
@@ -78,4 +81,3 @@ export function Background() {
 
   return <canvas ref={canvasRef} className="fixed inset-0 -z-10" />
 }
-

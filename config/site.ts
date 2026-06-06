@@ -31,7 +31,7 @@ export const siteConfig = {
       },
     ],
     skills: {
-      languages: ["Python", "C++", "SQL", "JavaScript", "HTML/CSS", "LaTeX"],
+      languages: ["C++", "Python", "SQL", "JavaScript", "HTML/CSS", "LaTeX", "Bash Scripting"],
       frameworks: ["React", "Bootstrap", "jQuery", "PyTorch", "OpenCV", "Agile", "Jira"],
       tools: ["Google Cloud Platform (GCP)", "Amazon Web Services (AWS)", "Git", "VS Code", "Jupyter Notebook", "Linux"],
       libraries: ["pandas", "NumPy", "Matplotlib", "PyTorch", "SciPy", "Scikit-learn"],

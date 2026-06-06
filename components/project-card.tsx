@@ -7,10 +7,11 @@ interface ProjectCardProps {
   description: string
   tags: string[]
   date: string
+  bullets?: string[]
   image?: string
 }
 
-export function ProjectCard({ title, description, tags, date, image }: ProjectCardProps) {
+export function ProjectCard({ title, description, tags, date, bullets, image }: ProjectCardProps) {
   return (
     <Card className="bg-secondary/50 border-white/10 hover:border-purple-500/50 transition group">
       <CardHeader>
@@ -29,6 +30,13 @@ export function ProjectCard({ title, description, tags, date, image }: ProjectCa
       </CardHeader>
       <CardContent>
         <p className="text-gray-400 mb-4">{description}</p>
+        {bullets && (
+          <ul className="mb-4 list-disc space-y-2 pl-5 text-sm text-gray-400">
+            {bullets.map((bullet) => (
+              <li key={bullet}>{bullet}</li>
+            ))}
+          </ul>
+        )}
         <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (
             <Badge key={tag} variant="outline" className="border-purple-500/50">
@@ -40,4 +48,3 @@ export function ProjectCard({ title, description, tags, date, image }: ProjectCa
     </Card>
   )
 }
-

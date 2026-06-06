@@ -49,6 +49,13 @@ export function ProjectDeck() {
         </CardHeader>
         <CardContent>
           <p className="text-gray-300 text-lg mb-6">{project.description}</p>
+          {project.bullets && (
+            <ul className="mb-6 list-disc space-y-2 pl-5 text-gray-300">
+              {project.bullets.map((bullet) => (
+                <li key={bullet}>{bullet}</li>
+              ))}
+            </ul>
+          )}
           <div className="flex flex-wrap gap-2">
             {project.tags.map((tag) => (
               <Badge key={tag} variant="outline" className="border-purple-500/50">
@@ -58,11 +65,15 @@ export function ProjectDeck() {
           </div>
         </CardContent>
       </Card>
-      <div className="flex justify-center mt-8 gap-2">
+      <div className="mt-6 text-center text-sm text-gray-400">
+        Project {currentIndex + 1} of {projects.length}
+      </div>
+      <div className="flex justify-center mt-4 gap-2">
         {projects.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
+            aria-label={`Show project ${index + 1}`}
             className={`w-2 h-2 rounded-full transition-all ${
               index === currentIndex ? "bg-purple-500 w-8" : "bg-gray-600"
             }`}
@@ -72,4 +83,3 @@ export function ProjectDeck() {
     </div>
   )
 }
-
