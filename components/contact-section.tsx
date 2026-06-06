@@ -8,7 +8,7 @@ export function ContactSection() {
     <div className="max-w-2xl mx-auto">
       <h2 className="text-4xl font-bold mb-8">Contact</h2>
 
-      <Card className="bg-secondary/50 border-white/10">
+      <Card className="bg-secondary/50 border-border">
         <CardHeader>
           <CardTitle>Let's Connect</CardTitle>
           <CardDescription>Feel free to reach out through any of these channels</CardDescription>
@@ -43,4 +43,3 @@ export function ContactSection() {
     </div>
   )
 }
-

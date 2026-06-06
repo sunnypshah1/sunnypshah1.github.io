@@ -12,7 +12,7 @@ export default function ContactPage() {
         <div className="max-w-2xl mx-auto">
           <h1 className="text-4xl font-bold mb-8">Contact</h1>
 
-          <Card className="bg-secondary/50 border-white/10">
+          <Card className="bg-secondary/50 border-border">
             <CardHeader>
               <CardTitle>Let's Connect</CardTitle>
               <CardDescription>Feel free to reach out through any of these channels</CardDescription>
@@ -49,4 +49,3 @@ export default function ContactPage() {
     </main>
   )
 }
-

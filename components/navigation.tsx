@@ -36,12 +36,12 @@ export function Navigation() {
   }
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-sm border-b border-white/10">
+    <nav className="sticky top-0 z-50 backdrop-blur-sm border-b border-border bg-background/80">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 sm:h-20 items-center justify-between">
           <button
             onClick={() => scrollTo("home")}
-            className="font-mono text-xl font-bold hover:text-purple-400 transition"
+            className="font-mono text-xl font-bold hover:text-primary transition"
           >
             {siteConfig.name}
           </button>
@@ -62,8 +62,8 @@ export function Navigation() {
                 key={section}
                 onClick={() => scrollTo(section)}
                 className={cn(
-                  "text-base hover:text-purple-400 transition capitalize",
-                  activeSection === section && "text-purple-400",
+                  "text-base hover:text-primary transition capitalize",
+                  activeSection === section && "text-primary",
                 )}
               >
                 {section}
@@ -73,7 +73,7 @@ export function Navigation() {
               <a
                 href={siteConfig.links.github}
                 target="_blank"
-                className="hover:text-purple-400 transition"
+                className="hover:text-primary transition"
                 rel="noreferrer"
               >
                 <Github className="h-5 w-5" />
@@ -81,7 +81,7 @@ export function Navigation() {
               <a
                 href={siteConfig.links.linkedin}
                 target="_blank"
-                className="hover:text-purple-400 transition"
+                className="hover:text-primary transition"
                 rel="noreferrer"
               >
                 <Linkedin className="h-5 w-5" />
@@ -94,4 +94,3 @@ export function Navigation() {
     </nav>
   )
 }
-

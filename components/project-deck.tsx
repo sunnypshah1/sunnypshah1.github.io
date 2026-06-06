@@ -42,15 +42,15 @@ export function ProjectDeck() {
           <ChevronRight className="h-6 w-6" />
         </Button>
       </div>
-      <Card className="bg-secondary/50 border-white/10 hover:border-purple-500/50 transition">
+      <Card className="bg-secondary/50 border-border hover:border-primary/50 transition">
         <CardHeader>
           <CardTitle className="text-2xl">{project.title}</CardTitle>
-          <p className="text-sm text-gray-400">{project.date}</p>
+          <p className="text-sm text-muted-foreground">{project.date}</p>
         </CardHeader>
         <CardContent>
-          <p className="text-gray-300 text-lg mb-6">{project.description}</p>
+          <p className="text-foreground text-lg mb-6">{project.description}</p>
           {project.bullets && (
-            <ul className="mb-6 list-disc space-y-2 pl-5 text-gray-300">
+            <ul className="mb-6 list-disc space-y-2 pl-5 text-foreground">
               {project.bullets.map((bullet) => (
                 <li key={bullet}>{bullet}</li>
               ))}
@@ -58,14 +58,14 @@ export function ProjectDeck() {
           )}
           <div className="flex flex-wrap gap-2">
             {project.tags.map((tag) => (
-              <Badge key={tag} variant="outline" className="border-purple-500/50">
+              <Badge key={tag} variant="outline" className="border-primary/50">
                 {tag}
               </Badge>
             ))}
           </div>
         </CardContent>
       </Card>
-      <div className="mt-6 text-center text-sm text-gray-400">
+      <div className="mt-6 text-center text-sm text-muted-foreground">
         Project {currentIndex + 1} of {projects.length}
       </div>
       <div className="flex justify-center mt-4 gap-2">
@@ -75,7 +75,7 @@ export function ProjectDeck() {
             onClick={() => setCurrentIndex(index)}
             aria-label={`Show project ${index + 1}`}
             className={`w-2 h-2 rounded-full transition-all ${
-              index === currentIndex ? "bg-purple-500 w-8" : "bg-gray-600"
+              index === currentIndex ? "bg-primary w-8" : "bg-muted-foreground/40"
             }`}
           />
         ))}

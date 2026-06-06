@@ -7,9 +7,9 @@ export function AboutSection() {
       <h2 className="text-4xl font-bold mb-8">About Me</h2>
 
       <div className="space-y-8">
-        <Card className="bg-secondary/50 border-white/10">
+        <Card className="bg-secondary/50 border-border">
           <CardContent className="pt-6">
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-foreground leading-relaxed">
               As a passionate software engineer and mathematics enthusiast, I thrive on solving complex problems and
               creating innovative solutions. Beyond my technical pursuits, I'm an avid poker player, enjoying the
               strategic elements and psychological aspects of the game. I also love staying active through running,
@@ -20,19 +20,19 @@ export function AboutSection() {
           </CardContent>
         </Card>
 
-        <Card className="bg-secondary/50 border-white/10">
+        <Card className="bg-secondary/50 border-border">
           <CardHeader>
             <CardTitle>Education</CardTitle>
           </CardHeader>
           <CardContent>
             <h3 className="text-xl font-bold">{siteConfig.education.university}</h3>
-            <p className="text-gray-400">{siteConfig.education.degree}</p>
-            <p className="text-gray-400">{siteConfig.education.graduation}</p>
+            <p className="text-muted-foreground">{siteConfig.education.degree}</p>
+            <p className="text-muted-foreground">{siteConfig.education.graduation}</p>
             <div className="mt-4">
               <h4 className="font-medium mb-2">Relevant Coursework:</h4>
               <div className="grid grid-cols-2 gap-2">
                 {siteConfig.education.courses.map((course) => (
-                  <p key={course} className="text-sm text-gray-400">
+                  <p key={course} className="text-sm text-muted-foreground">
                     {course}
                   </p>
                 ))}
@@ -41,7 +41,7 @@ export function AboutSection() {
           </CardContent>
         </Card>
 
-        <Card className="bg-secondary/50 border-white/10">
+        <Card className="bg-secondary/50 border-border">
           <CardHeader>
             <CardTitle>Technical Skills</CardTitle>
           </CardHeader>
@@ -82,4 +82,3 @@ export function AboutSection() {
     </div>
   )
 }
-

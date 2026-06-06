@@ -13,7 +13,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ title, description, tags, date, bullets, image }: ProjectCardProps) {
   return (
-    <Card className="bg-secondary/50 border-white/10 hover:border-purple-500/50 transition group">
+    <Card className="bg-secondary/50 border-border hover:border-primary/50 transition group">
       <CardHeader>
         {image && (
           <div className="relative w-full h-48 mb-4 overflow-hidden rounded-lg">
@@ -26,12 +26,12 @@ export function ProjectCard({ title, description, tags, date, bullets, image }: 
           </div>
         )}
         <CardTitle className="text-xl">{title}</CardTitle>
-        <p className="text-sm text-gray-400">{date}</p>
+        <p className="text-sm text-muted-foreground">{date}</p>
       </CardHeader>
       <CardContent>
-        <p className="text-gray-400 mb-4">{description}</p>
+        <p className="text-muted-foreground mb-4">{description}</p>
         {bullets && (
-          <ul className="mb-4 list-disc space-y-2 pl-5 text-sm text-gray-400">
+          <ul className="mb-4 list-disc space-y-2 pl-5 text-sm text-muted-foreground">
             {bullets.map((bullet) => (
               <li key={bullet}>{bullet}</li>
             ))}
@@ -39,7 +39,7 @@ export function ProjectCard({ title, description, tags, date, bullets, image }: 
         )}
         <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (
-            <Badge key={tag} variant="outline" className="border-purple-500/50">
+            <Badge key={tag} variant="outline" className="border-primary/50">
               {tag}
             </Badge>
           ))}
