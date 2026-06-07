@@ -8,6 +8,9 @@ const firaCode = Fira_Code({ subsets: ["latin"], variable: "--font-fira-code" })
 export const metadata = {
   title: "Portfolio",
   description: "Personal portfolio website",
+  icons: {
+    icon: "/icon.svg",
+  },
 }
 
 export default function RootLayout({
@@ -25,4 +28,3 @@ export default function RootLayout({
     </html>
   )
 }
-
